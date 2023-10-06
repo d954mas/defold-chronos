@@ -1,4 +1,4 @@
-`# Chronos for Defold
+# Chronos for Defold
 
 High resolution monotonic timers for Lua.
 https://github.com/ldrumm/chronos
