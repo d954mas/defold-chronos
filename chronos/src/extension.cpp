@@ -56,7 +56,14 @@ SOFTWARE.
  #endif
 #endif
 
-# if !defined(__APPLE__) && (defined(__unix__) || defined(__linux__))
+#if defined(__EMSCRIPTEN__)
+#include <emscripten/emscripten.h>
+static int chronos_nanotime(lua_State *L){
+    lua_pushnumber(L,emscripten_get_now()/1000.0);
+    return 1;
+}
+
+#elif !defined(__APPLE__) && (defined(__unix__) || defined(__linux__))
 static int chronos_nanotime(lua_State *L)
 {
 #ifdef HAVE_CLOCK_GETTIME
