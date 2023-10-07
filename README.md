@@ -5,7 +5,7 @@ https://github.com/ldrumm/chronos
 
 ## Installation
 __1)__ Add defold-chronos in your own project as a Defold library dependency. Open your game.project file and in the dependencies field under project add:
-https://github.com/d954mas/defold-chronos/archive/refs/tags/1.0.0.zip
+https://github.com/d954mas/defold-chronos/archive/refs/tags/1.0.1.zip
 
 ## Example
 ```lua
